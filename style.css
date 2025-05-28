@@ -117,6 +117,7 @@ p {
 
 .black-bg-section {
     background-color: var(--black);
+    background-image: url('assets/background1.jpg');
 }
 
 .logo-text-group,
