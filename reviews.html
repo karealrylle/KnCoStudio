@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - K&Co Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="header-nav">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
+            </div>
+            <div class="nav-center">
+                <img src="assets/K&Co.png" alt="K&Co Logo" class="header-logo">
+            </div>
+            <div class="nav-right">
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="blog.html" class="nav-link">BLOG</a>
+                <a href="contacts.html" class="nav-link">CONTACTS</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="reviews-section">
+        <div class="showcase-container">
+            <h2 class="showcase-title">REVIEWS</h2>
+            <p class="showcase-text">At K&Co, our clients are at the heart of everything we do. We cherish your trust and strive to create meaningful artistic experiences that exceed expectations.</p>
+            
+            <div class="image-scroll-container">
+                <div class="long-image-container" id="reviewsContainer">
+                    <img src="assets/reviews.png" alt="Customer Reviews" class="long-image">
+                    <img src="assets/reviews.png" alt="Customer Reviews" class="long-image">
+                </div>
+            </div>
+            
+            <div class="read-more-container">
+                <button class="scroll-btn left-btn" onclick="scrollReviews('left')">&lt;</button>
+                <button class="scroll-btn right-btn" onclick="scrollReviews('right')">&gt;</button>
+            </div>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <h3 style="color: var(--beige); font-size: 1.5rem; margin-bottom: 1rem; font-family: 'Monticello SC', serif; text-transform: uppercase; letter-spacing: 2px;">OVERALL RATING</h3>
+                <div style="font-size: 2rem; color: var(--beige); margin-bottom: 0.5rem;">★★★★★</div>
+                <p style="color: var(--beige); font-size: 1.2rem; font-family: 'MonticelloLTPro-Roman', serif;">4.9 out of 5 stars</p>
+                <p style="color: var(--beige); font-size: 1rem; font-family: 'MonticelloLTPro-Roman', serif; margin-top: 0.5rem;">Based on 247+ verified reviews</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 K&Co Studio. All Rights Reserved.</p>
+            <p>123 Artisan Street, Creative District, CA 90210</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollReviews(direction) {
+            const container = document.getElementById('reviewsContainer');
+            const scrollAmount = container.offsetWidth * 0.8;
+            
+            if (direction === 'left') {
+                container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+            } else {
+                container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+</html>

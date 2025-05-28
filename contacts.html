@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - K&Co Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="header-nav">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
+            </div>
+            <div class="nav-center">
+                <img src="assets/K&Co.png" alt="K&Co Logo" class="header-logo">
+            </div>
+            <div class="nav-right">
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="blog.html" class="nav-link">BLOG</a>
+                <a href="contacts.html" class="nav-link">CONTACTS</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contacts-section">
+        <div class="contacts-container">
+            <h1 class="contacts-title">GET IN TOUCH</h1>
+            <p class="contacts-description">
+                Connect with us through your preferred platform. We're here to answer your questions, 
+                discuss your artistic vision, and schedule your next appointment.
+            </p>
+
+            <div class="contact-info-grid">
+                <div class="contact-card">
+                    <h3 class="contact-card-title">VISIT OUR STUDIO</h3>
+                    <p class="contact-card-text">
+                        123 Artisan Street<br>
+                        Creative District, CA 90210<br><br>
+                        Open Tuesday - Sunday<br>
+                        11:00 AM - 8:00 PM
+                    </p>
+                </div>
+
+                <div class="contact-card">
+                    <h3 class="contact-card-title">REACH OUT DIRECTLY</h3>
+                    <p class="contact-card-text">
+                        Phone: +1 (555) 123-ARTS<br>
+                        Email: hello@kcostu.dio<br><br>
+                        Emergency Contact:<br>
+                        +1 (555) 911-HELP
+                    </p>
+                </div>
+            </div>
+
+            <div class="social-media-section">
+                <h2 class="social-title">FOLLOW OUR JOURNEY</h2>
+                <p class="social-description">
+                    Stay connected and see our latest work across all platforms
+                </p>
+
+                <div class="social-grid">
+                    <a href="#" class="social-media-link instagram">
+                        <div class="social-icon">📷</div>
+                        <div class="social-content">
+                            <h4>INSTAGRAM</h4>
+                            <p>@kco.studio</p>
+                            <span class="social-description-text">Daily artwork & behind-the-scenes</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-media-link facebook">
+                        <div class="social-icon">📘</div>
+                        <div class="social-content">
+                            <h4>FACEBOOK</h4>
+                            <p>K&Co Studio</p>
+                            <span class="social-description-text">Community updates & events</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-media-link tiktok">
+                        <div class="social-icon">🎵</div>
+                        <div class="social-content">
+                            <h4>TIKTOK</h4>
+                            <p>@kcostudio</p>
+                            <span class="social-description-text">Quick tutorials & time-lapses</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-media-link twitter">
+                        <div class="social-icon">🐦</div>
+                        <div class="social-content">
+                            <h4>TWITTER</h4>
+                            <p>@KCoStudio</p>
+                            <span class="social-description-text">Industry news & quick updates</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-media-link youtube">
+                        <div class="social-icon">🎥</div>
+                        <div class="social-content">
+                            <h4>YOUTUBE</h4>
+                            <p>K&Co Studio</p>
+                            <span class="social-description-text">In-depth tutorials & vlogs</span>
+                        </div>
+                    </a>
+
+                    <a href="#" class="social-media-link pinterest">
+                        <div class="social-icon">📌</div>
+                        <div class="social-content">
+                            <h4>PINTEREST</h4>
+                            <p>K&Co Studio</p>
+                            <span class="social-description-text">Design inspiration & portfolios</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="booking-cta-section">
+                <h2 class="cta-title">READY TO START YOUR ARTISTIC JOURNEY?</h2>
+                <a href="booking.html" class="cta-button">BOOK YOUR CONSULTATION</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 K&Co Studio. All Rights Reserved.</p>
+            <p>123 Artisan Street, Creative District, CA 90210</p>
+        </div>
+    </footer>
+
+    <style>
+        .contacts-section {
+            background-color: var(--black);
+            min-height: 100vh;
+            padding: 4rem 2rem;
+        }
+
+        .contacts-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            color: var(--white);
+        }
+
+        .contacts-title {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--beige);
+            font-family: 'Monticello SC', serif;
+            letter-spacing: 3px;
+        }
+
+        .contacts-description {
+            text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'MonticelloLTPro-Roman', serif;
+        }
+
+        .contact-info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            margin-bottom: 5rem;
+        }
+
+        .contact-card {
+            background-color: var(--burgundy);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-card-title {
+            color: var(--beige);
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            font-family: 'Monticello SC', serif;
+            letter-spacing: 1px;
+        }
+
+        .contact-card-text {
+            color: var(--white);
+            font-family: 'MonticelloLTPro-Roman', serif;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .social-media-section {
+            margin-bottom: 4rem;
+        }
+
+        .social-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--beige);
+            font-family: 'Monticello SC', serif;
+            letter-spacing: 2px;
+        }
+
+        .social-description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            color: var(--white);
+            font-family: 'MonticelloLTPro-Roman', serif;
+        }
+
+        .social-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .social-media-link {
+            display: flex;
+            align-items: center;
+            padding: 1.5rem;
+            background-color: var(--blue-magenta);
+            border-radius: 12px;
+            text-decoration: none;
+            color: var(--white);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-media-link:hover {
+            background-color: var(--burgundy);
+            border-color: var(--beige);
+            transform: translateY(-3px);
+        }
+
+        .social-icon {
+            font-size: 2rem;
+            margin-right: 1rem;
+            min-width: 60px;
+            text-align: center;
+        }
+
+        .social-content h4 {
+            font-family: 'Monticello SC', serif;
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+            letter-spacing: 1px;
+        }
+
+        .social-content p {
+            font-family: 'MonticelloLTPro-Roman', serif;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+            color: var(--beige);
+        }
+
+        .social-description-text {
+            font-family: 'MonticelloLTPro-Roman', serif;
+            font-size: 0.85rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .booking-cta-section {
+            text-align: center;
+            padding: 3rem 0;
+            background-color: var(--burgundy);
+            border-radius: 20px;
+            margin-top: 3rem;
+        }
+
+        .cta-title {
+            color: var(--beige);
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-family: 'Monticello SC', serif;
+            letter-spacing: 1px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--beige);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            letter-spacing: 1px;
+            padding: 15px 35px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--beige);
+            font-family: 'Monticello SC', serif;
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background-color: var(--beige);
+            color: var(--burgundy);
+        }
+
+        @media (max-width: 768px) {
+            .contacts-title {
+                font-size: 2rem;
+            }
+
+            .contact-info-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .social-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .social-title {
+                font-size: 2rem;
+            }
+
+            .cta-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</body>
+</html>

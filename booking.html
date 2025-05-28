@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment - K&Co Studio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .booking-form-container {
+            background-color: var(--black);
+            background-image: url('assets/background1.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 4rem 2rem;
+            min-height: 80vh;
+        }
+        
+        .booking-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 3rem;
+            border-radius: 10px;
+            border: 2px solid var(--burgundy);
+        }
+        
+        .form-title {
+            color: var(--beige);
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-label {
+            display: block;
+            color: var(--beige);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--burgundy);
+            border-radius: 5px;
+            background-color: var(--black);
+            color: var(--white);
+            font-family: 'MonticelloLTPro-Roman', serif;
+            font-size: 14px;
+        }
+        
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: var(--beige);
+        }
+        
+        .form-textarea {
+            height: 120px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .form-row .form-group {
+            flex: 1;
+        }
+        
+        .submit-button {
+            width: 100%;
+            background-color: var(--burgundy);
+            color: var(--beige);
+            border: none;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Monticello SC', serif;
+        }
+        
+        .submit-button:hover {
+            background-color: var(--beige);
+            color: var(--burgundy);
+        }
+        
+        @media (max-width: 768px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .booking-form {
+                padding: 2rem 1.5rem;
+            }
+            
+            .form-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="header-nav">
+            <div class="nav-left">
+                <a href="index.html" class="nav-link">HOME</a>
+                <a href="about.html" class="nav-link">ABOUT</a>
+                <a href="services.html" class="nav-link">SERVICES</a>
+            </div>
+            <div class="nav-center">
+                <img src="assets/K&Co.png" alt="K&Co Logo" class="header-logo">
+            </div>
+            <div class="nav-right">
+                <a href="gallery.html" class="nav-link">GALLERY</a>
+                <a href="blog.html" class="nav-link">BLOG</a>
+                <a href="contacts.html" class="nav-link">CONTACTS</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="booking-form-container">
+        <form class="booking-form">
+            <h2 class="form-title">Book Your Appointment</h2>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="form-input" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="service" class="form-label">Service Type</label>
+                <select id="service" name="service" class="form-select" required>
+                    <option value="">Select a Service</option>
+                    <option value="tattoo">Tattoo</option>
+                    <option value="piercing">Piercing</option>
+                    <option value="painting">Custom Painting</option>
+                    <option value="drawing">Drawing/Illustration</option>
+                    <option value="design">Design & Visuals</option>
+                    <option value="consultation">Consultation</option>
+                </select>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="preferredDate" class="form-label">Preferred Date</label>
+                    <input type="date" id="preferredDate" name="preferredDate" class="form-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferredTime" class="form-label">Preferred Time</label>
+                    <select id="preferredTime" name="preferredTime" class="form-select" required>
+                        <option value="">Select Time</option>
+                        <option value="09:00">9:00 AM</option>
+                        <option value="10:00">10:00 AM</option>
+                        <option value="11:00">11:00 AM</option>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="budget" class="form-label">Estimated Budget Range</label>
+                <select id="budget" name="budget" class="form-select">
+                    <option value="">Select Budget Range</option>
+                    <option value="under-100">Under $100</option>
+                    <option value="100-300">$100 - $300</option>
+                    <option value="300-500">$300 - $500</option>
+                    <option value="500-1000">$500 - $1000</option>
+                    <option value="1000-plus">$1000+</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="description" class="form-label">Project Description</label>
+                <textarea id="description" name="description" class="form-textarea" placeholder="Please describe your project in detail, including size, placement, style preferences, and any reference images you have..." required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="experience" class="form-label">Previous Experience</label>
+                <select id="experience" name="experience" class="form-select">
+                    <option value="">Select Experience Level</option>
+                    <option value="first-time">First Time</option>
+                    <option value="some-experience">Some Experience</option>
+                    <option value="experienced">Very Experienced</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="additionalInfo" class="form-label">Additional Information</label>
+                <textarea id="additionalInfo" name="additionalInfo" class="form-textarea" placeholder="Any allergies, medical conditions, special requests, or other information we should know..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-button">Submit Booking Request</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 K&Co Studio. All Rights Reserved.</p>
+            <p>123 Artisan Street, Creative District, CA 90210</p>
+        </div>
+    </footer>
+</body>
+</html>
